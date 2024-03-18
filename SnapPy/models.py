@@ -16,7 +16,7 @@ class Card:
   def __init__(self, suit, value):
     self.suit = suit
     self.value = value
-    self.image = pygame.image.load('images/' + self.suit.name + '-' + str(self.value) + '.svg')
+    self.image = pygame.image.load('SnapPy/images/' + self.suit.name + '-' + str(self.value) + '.svg')
 
 class Deck:
   cards = None

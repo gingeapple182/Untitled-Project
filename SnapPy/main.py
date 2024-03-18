@@ -9,7 +9,7 @@ pygame.display.set_caption("SnapPy")
 
 gameEngine = SnapEngine()
 
-cardBack = pygame.image.load('images/BACK.png')
+cardBack = pygame.image.load('SnapPy/images/BACK.png')
 cardBack = pygame.transform.scale(cardBack, (int(238*0.8), int(332*0.8)))
 
 def renderGame(window):
