@@ -7,3 +7,5 @@
 First practice following replit guide within VSCode
 > https://docs.replit.com/tutorials/python/build-card-game-pygame
 
+# Physics based game
+Aim to create a simple python game that allows a player to jump onto a ledge and fall back down
