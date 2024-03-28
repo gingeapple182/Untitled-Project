@@ -1,11 +1,11 @@
-var stars = [];
+var rain = [];
 
 //var speed;
 
 function setup() {
   createCanvas(600, 600);
   for (var i = 0; i < 700; i++) {
-    stars[i] = new Star();
+    rain[i] = new Rain();
   }
 }
 
@@ -14,7 +14,7 @@ function draw() {
   background(100);
   //translate(width / 2, height / 2);
   for (var i = 0; i < stars.length; i++) {
-    stars[i].update();
-    stars[i].show();
+    rain[i].update();
+    rain[i].show();
   }
 }

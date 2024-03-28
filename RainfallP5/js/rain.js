@@ -1,4 +1,4 @@
-function Star() {
+function Rain() {
     this.x = random(width);
     this.y = random(-height, height); // Change this line
     this.z = random(width);
