@@ -3,7 +3,7 @@ function Star() {
     this.y = random(-height, height); // Change this line
     this.z = random(width);
     this.speed = random(1, 5);
-    this.gravity = 0.01;
+    this.gravity = 0.2;
     this.length = map(this.speed, 0, 20, 10, 20);
   
     this.update = function() {
