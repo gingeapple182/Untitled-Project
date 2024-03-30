@@ -1,6 +1,6 @@
 var rain = [];
 
-//var speed;
+var speed;
 
 function setup() {
   createCanvas(600, 600);
@@ -10,10 +10,10 @@ function setup() {
 }
 
 function draw() {
-  //speed = map(mouseX, 0, width, 10, 50);
+  speed = map(mouseX, 0, width, 10, 50);
   background(100);
   //translate(width / 2, height / 2);
-  for (var i = 0; i < stars.length; i++) {
+  for (var i = 0; i < rain.length; i++) {
     rain[i].update();
     rain[i].show();
   }
