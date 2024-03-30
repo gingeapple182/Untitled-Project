@@ -10,12 +10,15 @@ function Ship(){
     }
 
     this.render = function(){
+        push();
         translate(this.pos.x, this.pos.y);
         rotate(this.heading + PI/2)
         noFill();
         stroke(255);
         triangle(-this.r, this.r, this.r, this.r, 0, -this.r);
+        pop();
     }
+
     this.edges = function() {
         if (this.pos.x > width + this.r) {
             this.pos.x = -this.r;
@@ -38,11 +41,11 @@ function Ship(){
             this.boost();
         }
         this.pos.add(this.vel);
-        this.vel.mult(0.95);
+        this.vel.mult(0.99);
     }
     this.boost = function() {
         var force = p5.Vector.fromAngle(this.heading);
-        force.mult(0.99);
+        force.mult(0.1);
         this.vel.add(force);
     }
 }
