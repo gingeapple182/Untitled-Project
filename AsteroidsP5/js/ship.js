@@ -13,8 +13,9 @@ function Ship(){
         push();
         translate(this.pos.x, this.pos.y);
         rotate(this.heading + PI/2)
-        fill(0);
-        stroke(255);
+        fill(255);
+        strokeWeight(4);
+        stroke(204, 204, 0);
         triangle(-this.r, this.r, this.r, this.r, 0, -this.r);
         pop();
     }
