@@ -14,6 +14,8 @@ function setup() {
     }
 }
 
+TODO: //add a start screen
+
 function draw() {
     background(0);
     if (!gameOver && !victory) {
