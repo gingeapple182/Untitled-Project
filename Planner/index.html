@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Daily Commissions</title>
+    <script src="libraries/p5.js" type="text/javascript"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="left-bar">
+            <div class="commissions">
+                <h3>Daily commissions</h3>
+                <p>Complete all commissions to receive a bonus reward from <em>Ginge</em></p>
+            </div>
+            <img id="primos" src="images/primos.png">
+            <script>
+                const primos = document.querySelector("#primos");
+                primos.addEventListener("click",()=> {
+                    alert('You have a cute butt!');
+                })
+            </script>
+            <div class="tasksRemaining">
+                <h3>Tasks Remaining</h3>
+                <span id="tasksRemaining">10</span>
+            </div>
+        </div>
+        
+
+
+        <div class="task-list">
+            <h2>Daily Commissions</h2>
+            <ul id="tasks">
+            </ul>
+            <input type="text" id="taskInput" placeholder="Enter task...">
+            <select id="prioritySelect">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+            <button onclick="addTask()">Add Task</button>
+        </div>
+    </div>
+    <script src="js/stuff.js"></script>
+</body>
+</html>

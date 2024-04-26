@@ -1,0 +1,73 @@
+body {
+    font-family: "Optima", sans-serif;
+    background-color: #eeeeee;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-bar {
+    width: 20%;
+    background-color: #f0e4e4;
+    padding: 10px;
+}
+
+.commissions {
+    color:#661414
+}
+
+.tasksRemaining {
+    color:#661414
+}
+
+#tasksRemaining {
+    display: block;
+    text-align: center;
+}
+
+#primos {
+    width:100px;
+    height: auto;
+}
+
+
+.task-list {
+    width: 100%;
+    background-color: #eed9d9;
+}
+
+.task-list h2 {
+    padding: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+input[type="text"] {
+    width: calc(80%);
+    padding: 5px;
+    /*margin-bottom: 10px;*/
+}
+
+button {
+    padding: 8px 16px;
+    background-color: #fa62d4;
+    color: rgb(255, 255, 255);
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
